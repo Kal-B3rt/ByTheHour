@@ -49,6 +49,7 @@ class DataController: ObservableObject {
             project.title = "Project \(i)"
             project.items = []
             project.creationDate = Date()
+            project.closed = Bool.random()
     
             for j in 1...10 {
                 let item = Item(context: viewContext)
@@ -57,7 +58,7 @@ class DataController: ObservableObject {
                 item.completed = Bool.random()
                 item.project = project
                 item.time = Double.random(in: 1...8)
-                item.pay = Double.random(in: 12...15)
+                item.pay = Double.random(in: 12...20)
                 item.total = item.pay * item.time
             }
         }
