@@ -24,10 +24,10 @@ struct ProjectsView: View {
         NavigationView {
             List {
                 ForEach(projects.wrappedValue) { project in
-                    Section(header: Text(project.title ?? "")) {
-                        ForEach(project.items?.allObjects as? [Item] ?? []) { item in
+                    Section(header: Text(project.projectTitle)) {
+                        ForEach(project.projectItems) { item in
                             HStack{
-                                Text(item.title ?? "")
+                                Text(item.itemTitle)
                                 Spacer()
                                 Text("$\(String(format: "%.2f", item.total ))")
                                     .foregroundColor(Color.green)
