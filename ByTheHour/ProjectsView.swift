@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProjectsView: View {
+    static let openTag: String? = "open"
+    static let closedTag: String? = "closed"
     let showCompletedProjects: Bool
     
     let projects: FetchRequest<Project>
@@ -26,12 +28,7 @@ struct ProjectsView: View {
                 ForEach(projects.wrappedValue) { project in
                     Section(header: Text(project.projectTitle)) {
                         ForEach(project.projectItems) { item in
-                            HStack{
-                                Text(item.itemTitle)
-                                Spacer()
-                                Text("$\(String(format: "%.2f", item.total ))")
-                                    .foregroundColor(Color.green)
-                            }
+                            ItemRowView(item: item)
                         }
                     }
                 }
