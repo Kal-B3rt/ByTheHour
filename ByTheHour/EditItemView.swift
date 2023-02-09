@@ -32,21 +32,21 @@ struct EditItemView: View {
     var body: some View {
         Form {
             Section(header: Text("Basic settings")) {
-                TextField("Item name", text: $title)
-                TextField("Description", text: $detail)
+                TextField("Item name", text: $title.onChange(update))
+                TextField("Description", text: $detail.onChange(update))
             }
             
             Section(header: Text("Pay Settings")) {
-                TextField("Pay", value: $pay, format: .number)
-                TextField("time", value: $time, format: .number)
+                TextField("Pay", value: $pay.onChange(update), format: .number)
+                TextField("time", value: $time.onChange(update), format: .number)
             }
             
             Section(header: Text("Form Status")) {
-                Toggle("Submitted", isOn: $completed)
+                Toggle("Submitted", isOn: $completed.onChange(update))
             }
         }
         .navigationTitle("Edit Item")
-        .onDisappear(perform: update)
+        .onDisappear(perform: dataController.save)
     }
     
     func update() {
