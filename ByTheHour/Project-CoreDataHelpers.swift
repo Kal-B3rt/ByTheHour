@@ -40,10 +40,12 @@ extension Project{
     }
     
     var projectItems: [Item] {
-        let itemsArray = items?.allObjects as? [Item] ?? []
-        
-        
-        return itemsArray.sorted { first, second in
+        items?.allObjects as? [Item] ?? []
+    }
+    
+    
+    var projectItemsDefaultSorted: [Item] {
+        projectItems.sorted { first, second in
             if first.completed == false {
                 if second.completed == true {
                     return true
@@ -65,6 +67,18 @@ extension Project{
         let completedItems = originalItems.filter(\.completed)
         
         return Double(completedItems.count) / Double(originalItems.count)
+    }
+    
+    func projectItemsho
+    (using sortOrder: Item.SortOrder) -> [Item] {
+        switch sortOrder {
+        case .title:
+            return projectItems.sorted { $0.itemTitle < $1.itemTitle }
+        case .creationDate:
+            return projectItems.sorted { $0.itemCreationDate < $1.itemCreationDate }
+        case .optimized:
+            return projectItemsDefaultSorted
+        }
     }
     
     
