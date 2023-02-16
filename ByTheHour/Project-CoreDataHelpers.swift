@@ -69,7 +69,7 @@ extension Project{
         return Double(completedItems.count) / Double(originalItems.count)
     }
     
-    func projectItemsho
+    func projectItems
     (using sortOrder: Item.SortOrder) -> [Item] {
         switch sortOrder {
         case .title:
