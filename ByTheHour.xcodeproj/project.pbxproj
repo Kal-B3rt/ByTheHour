@@ -17,6 +17,7 @@
 		3C3548ED2996D9DB000FA8F2 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3548EC2996D9DB000FA8F2 /* ProjectHeaderView.swift */; };
 		3C492E44299A9E9C0044FCDE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C492E43299A9E9C0044FCDE /* Colors.xcassets */; };
 		3C492E46299A9F9D0044FCDE /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C492E45299A9F9D0044FCDE /* EditProjectView.swift */; };
+		3C62C220299F2E9F00086F72 /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C62C21F299F2E9F00086F72 /* Color-Additions.swift */; };
 		3C6C2D1E299DDA4F0022B7C2 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C2D1D299DDA4F0022B7C2 /* SelectSomethingView.swift */; };
 		3CA1D2D5299497F800F41B79 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1D2D4299497F800F41B79 /* EditItemView.swift */; };
 		3CA1D2D729949FF100F41B79 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1D2D629949FF100F41B79 /* ItemRowView.swift */; };
@@ -38,6 +39,7 @@
 		3C3548EC2996D9DB000FA8F2 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		3C492E43299A9E9C0044FCDE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3C492E45299A9F9D0044FCDE /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		3C62C21F299F2E9F00086F72 /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 		3C6C2D1D299DDA4F0022B7C2 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		3CA1D2D4299497F800F41B79 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		3CA1D2D629949FF100F41B79 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				3C0446C8298F4CAD002F3A23 /* ByTheHourApp.swift */,
 				3CE1D59C29917F9D00679BF2 /* HomeView.swift */,
+				3C62C21F299F2E9F00086F72 /* Color-Additions.swift */,
 				3CE1D59E2991804300679BF2 /* ProjectsView.swift */,
 				3C6C2D1D299DDA4F0022B7C2 /* SelectSomethingView.swift */,
 				3CA1D2D629949FF100F41B79 /* ItemRowView.swift */,
@@ -184,6 +187,7 @@
 				3C0446D8298F4D13002F3A23 /* Main.xcdatamodeld in Sources */,
 				3C492E46299A9F9D0044FCDE /* EditProjectView.swift in Sources */,
 				3CAAC7F9299193CB007F8BDD /* Project-CoreDataHelpers.swift in Sources */,
+				3C62C220299F2E9F00086F72 /* Color-Additions.swift in Sources */,
 				3C0446DA298F5011002F3A23 /* DataController.swift in Sources */,
 				3CA1D2D729949FF100F41B79 /* ItemRowView.swift in Sources */,
 				3C0446CB298F4CAD002F3A23 /* ContentView.swift in Sources */,
