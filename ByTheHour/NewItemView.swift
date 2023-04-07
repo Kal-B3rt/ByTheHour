@@ -16,39 +16,54 @@ struct NewItemView: View {
     @State private var total = ""
     @State private var date = Date()
     
+    @State private var showingSheet = false
+    
     var body: some View {
         VStack(spacing: 0){
+            Spacer()
+            
             VStack(alignment: .trailing, spacing: 0){
                 Text("0:00")
-                    .font(Font.system(size:100, design: .monospaced))
-                    
-
+                    .font(Font.system(size:100))
+                
+                
                 HStack(alignment: .bottom){
                     ZStack(alignment: .bottomLeading){
                         MultiplyShape1()
-                            .stroke(lineWidth: 3)
+                            .stroke(lineWidth: 2)
                         MultiplyShape2()
-                            .stroke(lineWidth: 3)
+                            .stroke(lineWidth: 2)
                     }
-                    .frame(width: 15, height: 15)
+                    .frame(width: 25, height: 30)
                     .padding(.bottom)
+                    .foregroundColor(.secondary)
                     
                     Spacer()
                     
-                    Text("$\(String(rate))")
-                        .font(Font.system(size:70, design: .monospaced))
+                    
+                    
+                    Text("$\(rate, specifier: "%.2f")")
+                        .font(Font.system(size:70))
+                        .fontWeight(.light)
+                        .foregroundColor(.secondary)
+                        .onTapGesture {
+                            showingSheet = true
+                        }
                 }
                 NewLine()
-                    .stroke(lineWidth: 4)
+                    .stroke(lineWidth: 2)
                     .padding(0)
+                    .foregroundColor(.secondary)
                 
             }
             .frame(width: 300, height: 250)
             .padding(.horizontal)
             
-            
             Spacer()
-            Text("New Stuff")
+        }
+        .sheet(isPresented: $showingSheet) {
+            SheetView(rate: $rate)
+            
         }
     }
 }
@@ -58,3 +73,4 @@ struct NewItemView: View {
             NewItemView()
         }
     }
+
