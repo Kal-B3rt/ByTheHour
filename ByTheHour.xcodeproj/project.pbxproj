@@ -26,8 +26,11 @@
 		3C81F63129DFAA6200952BE1 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81F63029DFAA6200952BE1 /* SheetView.swift */; };
 		3CA1D2D5299497F800F41B79 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1D2D4299497F800F41B79 /* EditItemView.swift */; };
 		3CA1D2D729949FF100F41B79 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1D2D629949FF100F41B79 /* ItemRowView.swift */; };
+		3CA3BB4B29E45C3A00BEE144 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3BB4A29E45C3A00BEE144 /* TimerView.swift */; };
 		3CAAC7F7299191A9007F8BDD /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAAC7F6299191A9007F8BDD /* Item-CoreDataHelpers.swift */; };
 		3CAAC7F9299193CB007F8BDD /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAAC7F8299193CB007F8BDD /* Project-CoreDataHelpers.swift */; };
+		3CC893AF29EDC28E00456212 /* Timer-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC893AE29EDC28E00456212 /* Timer-Additions.swift */; };
+		3CC893B129EDC8C000456212 /* MoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC893B029EDC8C000456212 /* MoneyView.swift */; };
 		3CE1D59D29917F9D00679BF2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE1D59C29917F9D00679BF2 /* HomeView.swift */; };
 		3CE1D59F2991804300679BF2 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE1D59E2991804300679BF2 /* ProjectsView.swift */; };
 		3CF4112E29C009EE00181883 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4112D29C009EE00181883 /* ItemListView.swift */; };
@@ -55,8 +58,11 @@
 		3C81F63029DFAA6200952BE1 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		3CA1D2D4299497F800F41B79 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		3CA1D2D629949FF100F41B79 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		3CA3BB4A29E45C3A00BEE144 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		3CAAC7F6299191A9007F8BDD /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		3CAAC7F8299193CB007F8BDD /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		3CC893AE29EDC28E00456212 /* Timer-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer-Additions.swift"; sourceTree = "<group>"; };
+		3CC893B029EDC8C000456212 /* MoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyView.swift; sourceTree = "<group>"; };
 		3CE1D59C29917F9D00679BF2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3CE1D59E2991804300679BF2 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		3CF4112D29C009EE00181883 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
@@ -98,22 +104,25 @@
 				3CE1D59C29917F9D00679BF2 /* HomeView.swift */,
 				3CF4112D29C009EE00181883 /* ItemListView.swift */,
 				3C62C21F299F2E9F00086F72 /* Color-Additions.swift */,
+				3CC893AE29EDC28E00456212 /* Timer-Additions.swift */,
 				3CE1D59E2991804300679BF2 /* ProjectsView.swift */,
 				3C6C2D1D299DDA4F0022B7C2 /* SelectSomethingView.swift */,
 				3CA1D2D629949FF100F41B79 /* ItemRowView.swift */,
 				3C05EE7D2995992B00403907 /* Binding-onchange.swift */,
 				3CAAC7F6299191A9007F8BDD /* Item-CoreDataHelpers.swift */,
+				3CC893B029EDC8C000456212 /* MoneyView.swift */,
 				3CAAC7F8299193CB007F8BDD /* Project-CoreDataHelpers.swift */,
 				3C3548EC2996D9DB000FA8F2 /* ProjectHeaderView.swift */,
 				3C492E45299A9F9D0044FCDE /* EditProjectView.swift */,
 				3C0446CA298F4CAD002F3A23 /* ContentView.swift */,
 				3CA1D2D4299497F800F41B79 /* EditItemView.swift */,
 				3C6D4EF729D76A240028ED35 /* NewItemView.swift */,
+				3CA3BB4A29E45C3A00BEE144 /* TimerView.swift */,
 				3C81F63029DFAA6200952BE1 /* SheetView.swift */,
 				3C81F62929DB55FF00952BE1 /* TestView.swift */,
+				3C0446D9298F5011002F3A23 /* DataController.swift */,
 				3C81F62B29DB56C800952BE1 /* Shapes */,
 				3C0446D6298F4D13002F3A23 /* Main.xcdatamodeld */,
-				3C0446D9298F5011002F3A23 /* DataController.swift */,
 				3C492E43299A9E9C0044FCDE /* Colors.xcassets */,
 				3C0446CC298F4CAF002F3A23 /* Assets.xcassets */,
 				3C0446CE298F4CAF002F3A23 /* Preview Content */,
@@ -214,12 +223,15 @@
 				3CE1D59F2991804300679BF2 /* ProjectsView.swift in Sources */,
 				3C81F62D29DB570000952BE1 /* XShape.swift in Sources */,
 				3C3548ED2996D9DB000FA8F2 /* ProjectHeaderView.swift in Sources */,
+				3CC893AF29EDC28E00456212 /* Timer-Additions.swift in Sources */,
 				3C05EE7E2995992B00403907 /* Binding-onchange.swift in Sources */,
 				3CF4112E29C009EE00181883 /* ItemListView.swift in Sources */,
 				3C6C2D1E299DDA4F0022B7C2 /* SelectSomethingView.swift in Sources */,
 				3C0446D8298F4D13002F3A23 /* Main.xcdatamodeld in Sources */,
+				3CC893B129EDC8C000456212 /* MoneyView.swift in Sources */,
 				3C492E46299A9F9D0044FCDE /* EditProjectView.swift in Sources */,
 				3CF4113029C00B5F00181883 /* ProjectSummaryView.swift in Sources */,
+				3CA3BB4B29E45C3A00BEE144 /* TimerView.swift in Sources */,
 				3CAAC7F9299193CB007F8BDD /* Project-CoreDataHelpers.swift in Sources */,
 				3C62C220299F2E9F00086F72 /* Color-Additions.swift in Sources */,
 				3C0446DA298F5011002F3A23 /* DataController.swift in Sources */,

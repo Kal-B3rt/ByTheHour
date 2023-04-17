@@ -38,6 +38,28 @@ struct SheetView: View {
                 .fontWeight(.light)
                 .foregroundColor(.secondary)
             
+            HStack{
+                Spacer()
+                Button {
+                    if rate >= 1.00 {
+                        rate -= 1
+                    }
+                } label: {
+                    Image(systemName: "arrow.down")
+                        .fontWeight(.heavy)
+                }
+                Spacer()
+                Button {
+                    if rate != 0.00 {
+                        rate -= 0.25
+                    }
+                } label: {
+                    Image(systemName: "arrow.down")
+                        .fontWeight(.heavy)
+                }
+                Spacer()
+            }
+            
             Spacer()
             
             Button("Press to dismiss") {

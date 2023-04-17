@@ -8,6 +8,7 @@
 import SwiftUI
 
 @main
+
 struct ByTheHourApp: App {
     @StateObject var dataController: DataController
     
@@ -18,7 +19,7 @@ struct ByTheHourApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NewItemView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
                 .environmentObject(dataController)
                 .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification), perform: save)

@@ -9,22 +9,23 @@ import SwiftUI
 
 struct NewItemView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
-    
-    @State private var time = ""
-    @State private var rate = 10.25
-    @State private var title = "New Item"
-    @State private var total = ""
-    @State private var date = Date()
+        
+        @State private var time = "10:00" // changed from ""
+        @State private var rate: Double = 10.25
+        @State private var title = "New Item"
+        @State private var total = ""
+        @State private var date = Date()
     
     @State private var showingSheet = false
+    
+    @State private var isTimerRunning = false
     
     var body: some View {
         VStack(spacing: 0){
             Spacer()
             
             VStack(alignment: .trailing, spacing: 0){
-                Text("0:00")
-                    .font(Font.system(size:100))
+                TimerView(isTimerRunning: $isTimerRunning)
                 
                 
                 HStack(alignment: .bottom){
@@ -60,6 +61,28 @@ struct NewItemView: View {
             .padding(.horizontal)
             
             Spacer()
+            
+            MoneyView(time: $time, rate: $rate)
+            
+            
+            
+            Button(action: {
+                            isTimerRunning.toggle()
+                        }) {
+                            Text(isTimerRunning ? "Stop" : "Start")
+                            
+                        }
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(isTimerRunning ? Color.red : Color.blue)
+                        .cornerRadius(15)
+                        .foregroundColor(.white)
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .padding()
+                        
+            
+            
         }
         .sheet(isPresented: $showingSheet) {
             SheetView(rate: $rate)
