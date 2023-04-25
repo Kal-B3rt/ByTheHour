@@ -20,14 +20,18 @@ struct SheetView: View {
                     rate += 1
                 } label: {
                     Image(systemName: "arrow.up")
+                        .frame(width: 44, height: 44)
                         .fontWeight(.heavy)
+                        .foregroundColor(.green)
                 }
                 Spacer()
                 Button {
                     rate += 0.25
                 } label: {
                     Image(systemName: "arrow.up")
+                        .frame(width: 44, height: 44)
                         .fontWeight(.heavy)
+                        .foregroundColor(.green)
                 }
                 Spacer()
 
@@ -46,7 +50,9 @@ struct SheetView: View {
                     }
                 } label: {
                     Image(systemName: "arrow.down")
+                        .frame(width: 44, height: 44)
                         .fontWeight(.heavy)
+                        .foregroundColor(.red)
                 }
                 Spacer()
                 Button {
@@ -55,7 +61,9 @@ struct SheetView: View {
                     }
                 } label: {
                     Image(systemName: "arrow.down")
+                        .frame(width: 44, height: 44)
                         .fontWeight(.heavy)
+                        .foregroundColor(.red)
                 }
                 Spacer()
             }
