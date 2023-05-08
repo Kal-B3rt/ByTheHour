@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TimerView: View {
-    //
+    
     @Binding var time: String
     @State private var secondsElapsed: TimeInterval = 0
     @Binding var isTimerRunning: Bool
@@ -24,6 +24,7 @@ struct TimerView: View {
             if isTimerRunning {
                 secondsElapsed += 1
                 time = secondsElapsed.formattedTime
+                
             }
         }
     }

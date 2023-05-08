@@ -19,17 +19,17 @@ struct ContentView: View {
                     Text("Home")
                 }
             
-            ProjectsView(showCompletedProjects: false)
-                .tag(ProjectsView.openTag)
+            NewItemView()
+                .tag(NewItemView.tag)
                 .tabItem {
-                    Image(systemName: "list.bullet")
-                    Text("Open")
+                    Image(systemName: "dollarsign.circle.fill")
+                    Text("Start New Time")
                 }
             
             ProjectsView(showCompletedProjects: true)
                 .tag(ProjectsView.closedTag)
                 .tabItem {
-                    Image(systemName: "checkmark")
+                    Image(systemName: "list.bullet")
                     Text("Completed")
                 }
         }
